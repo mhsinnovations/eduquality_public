@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "922264656327",
+    "project_id": "eduquality-49b2d",
+    "storage_bucket": "eduquality-49b2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922264656327:android:4a2602fd35e9fc582a21e2",
+        "android_client_info": {
+          "package_name": "com.mhsinnovations.eduquality"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922264656327-hahivujctt87hucclrsjsa913hohevut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFNOh0kAOOCR2_gT7zojUTFSVgyHI3a28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922264656327-hahivujctt87hucclrsjsa913hohevut.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "922264656327-9eknigb6j7ukm9mfaioas4sd9gvi9or6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mhsinnovations.eduquality"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
