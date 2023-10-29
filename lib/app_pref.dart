@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_fr_file: non_constant_identifier_names
 
 import 'dart:async';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -29,12 +29,12 @@ String getLocale() {
       : Pref.getString(Keys.LOCALE, "");
 }
 
-// "username": "Admin",
+// "username": "Matthew",
 //         "phone": "0123456789",
-//         "password": "$2a$10$Rln/CrpWrHVyzqMpy.cIZOfbhDzs.ArqKAOAjv8kcHKN8EY1CvRyK",
-//         "profile_pic": "uploads/users/tetqs-1111.jpg",
-//         "role": "Admin",
-//         "flag": 1,
+//         "password": "notarealpwd",
+//         "profile_pic": "uploads/users/matt.jpg",
+//         "role": "",
+//         "flag": 0,
 class Keys {
   static String AUTH_TOKEN = "AUTH_TOKEN";
   static String USERNAME = "USERNAME";
