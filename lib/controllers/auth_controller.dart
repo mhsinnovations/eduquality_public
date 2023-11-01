@@ -97,7 +97,7 @@ class AuthController extends GetxController {
 
         // Updated This are and directly used the firebase firestore instance
         await FirebaseFirestore.instance
-            .collection('users')
+            .collection('myUser')
             .doc(cred.user!.uid)
             .set(user.toJson());
         _setInitialScreen();
@@ -207,7 +207,7 @@ class AuthController extends GetxController {
 
   String generateNonce([int length = 32]) {
     const charset =
-        '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._';
+        '012';
     final random = Random.secure();
     return List.generate(length, (_) => charset[random.nextInt(charset.length)])
         .join();
@@ -237,20 +237,7 @@ class AuthController extends GetxController {
           child: CircularProgressIndicator(),
         ),
       ));
-      // Trigger the authentication flow
-      // final AuthorizationCredentialAppleID appleCredential =
-      //     await SignInWithApple.getAppleIDCredential(
-      //   scopes: [
-      //     AppleIDAuthorizationScopes.email,
-      //     AppleIDAuthorizationScopes.fullName,
-      //   ],
-      // webAuthenticationOptions: WebAuthenticationOptions(
-      //   clientId: 'L6X9W624KJ',
-      //   redirectUri: Uri.parse(
-      //       'https://eduquality-49b2d.firebaseapp.com/auth/handler'),
-      // ),
-      //   nonce: 'yourNonce',
-      // );
+    
       final appleCredential = await SignInWithApple.getAppleIDCredential(
         scopes: [
           AppleIDAuthorizationScopes.email,
@@ -258,9 +245,9 @@ class AuthController extends GetxController {
         ],
         nonce: nonce,
         webAuthenticationOptions: WebAuthenticationOptions(
-          clientId: 'com.mhsinnovations.eduquality.android',
+          clientId: 'xxxxxxx',
           redirectUri: Uri.parse(
-              'https://eduquality-49b2d.firebaseapp.com/__/auth/handler'),
+              'xxxxxxx'),
         ),
       );
 
